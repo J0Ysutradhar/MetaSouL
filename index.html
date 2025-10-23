@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="MetaXsouL - your trust worthy software agency" />
+    <meta name="keywords" content="MetaXsouL, software, agency, website, webapp" />
+    <meta name="author" content="joy sutradhar" />
+    <title>MetaXsouL</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+      <link href="https://j0ysutradhar.github.io/joy-s-portfolio/chat.css" rel="stylesheet" />
+<script type="module">
+    import { createChat } from 'https://cdn.jsdelivr.net/npm/@n8n/chat/dist/chat.bundle.es.js';
+
+    createChat({
+        webhookUrl: 'https://n8n.metaxsoul.store/webhook/9998c766-cdb9-423b-9b54-3523eef80bc0/chat', 
+      mode: 'window',
+      target: '#n8n-chat',
+      showWelcomeScreen: false,
+      loadPreviousSession: true,
+      enableStreaming: false,
+      initialMessages: [
+        'Hi there! 👋',
+        'My name is Monica. How can I assist you today?'
+      ],
+      i18n: {
+        en: {
+          title: 'Welcome to Metasoul support',
+          subtitle: "Let's get your questions answered.",
+          inputPlaceholder: 'Type your message here...'
+        }
+      }
+    });
+
+</script>
+  </body>
+</html>
